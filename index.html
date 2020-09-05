@@ -2,11 +2,24 @@
 <html>
 <head>
     <style>
+        a {
+            display: block;
+            padding: 10px;
+        }
+        a:link {
+            text-decoration: none;
+            color: black;
+        }
+        a:hover, a:active {
+            text-decoration: underline;
+        }
         ul {
             list-style-type: none;
             margin: 0;
             padding: 0;
+            color: black;
         }
+        
         #google-logo {
             display: block;
             margin: 0 auto;
@@ -16,18 +29,24 @@
             margin: 0 auto;
 
         }
+        #main-zone {
+            padding: 200px;
+        }
     </style>
 </head>
 <body>
     <header>
         <ul>
-            <li><a href="about.asp">About</a></li>
-            <li><a href="store.asp">Store</a></li>
+            <li style="float: left;"><a href="about.asp">About</a></li>
+            <li style="float: left;"><a href="store.asp">Store</a></li>
+            <li style="float: right;"><a href="images.asp">Images</a></li>
+            <li style="float: right;"><a href="gmail.asp">Gmail</a></li>
         </ul>
     </header>
+    <div id="main-zone">
     <img id="google-logo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google logo">
     <input id="search-bar" type="text">
-
+    </div>
 </body>
 
 </html>
