@@ -2,6 +2,7 @@
 <html>
 <head>
     <style>
+        /* changes link text based on hover or active state */
         a {
             display: block;
             padding: 10px;
@@ -13,6 +14,7 @@
         a:hover, a:active {
             text-decoration: underline;
         }
+        /* formatting for header and footer text */
         ul {
             list-style-type: none;
             margin: 0;
@@ -25,15 +27,10 @@
             margin: 0 auto;
             padding: 200px 200px 30px 200px;
         }
+        
         #search-bar {
             display: block;
             margin: 0 auto;
-
-        }
-        
-            
-        
-        #search-bar {
             width: 500px;
             border-radius: 20px;
             border-color: rgba(17, 16, 16, 0.116);
@@ -46,7 +43,7 @@
             
         }
         button {
-            margin: 25px;
+            margin: 25px 10px;
             background-color: rgb(238, 234, 234);
             padding: 5px 10px 5px 10px;
             height: 30px;
@@ -55,10 +52,19 @@
             color: gray;
             
         }
+        /* footer div formatting */
+        footer {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: rgb(245, 240, 240);
+            font-size: 14px;
+        }
     </style>
 </head>
 <body>
-    <header>
+    <header> <!-- header links-->
         <ul>
             <li style="float: left;"><a href="about.asp">About</a></li>
             <li style="float: left;"><a href="store.asp">Store</a></li>
@@ -66,7 +72,7 @@
             <li style="float: right;"><a href="gmail.asp">Gmail</a></li>
         </ul>
     </header>
-    
+    <!-- logo and search bar-->
     <img id="google-logo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google logo">
     <input id="search-bar" type="text">
 
@@ -74,6 +80,16 @@
         <button type="button" form="search-bar">Google Search</button>
         <button type="button">I'm Feeling Lucky</button>
     </div>
+    <footer> <!-- footer links-->
+        <ul>
+            <li style="float: left;"><a href="advertising.asp">Advertising</a></li>
+            <li style="float: left;"><a href="business.asp">Business</a></li>
+            <li style="float: left;"><a href="howsearchworks.asp">How Search works</a></li>
+            <li style="float: right;"><a href="settings.asp">Settings</a></li>
+            <li style="float: right;"><a href="terms.asp">Terms</a></li>
+            <li style="float: right;"><a href="privacy.asp">Privacy</a></li>
+        </ul>
+    </footer>
     
 </body>
 
